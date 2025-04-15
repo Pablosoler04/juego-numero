@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego de adivinar el número</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1>Juego de adivinar el número</h1>
+    <p>Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos. Te diremos si tu intento es demasiado alto o demasiado bajo.</p>
+
+    <div class="formulario">
+      <label for="campoAdivinar">Introduce tu intento: </label>
+      <input type="number" min="1" max="100" required id="campoAdivinar" class="campoAdivinar">
+      <input type="submit" value="Enviar intento" class="enviarAdivinanza">
+    </div>
+
+    <div class="resultados">
+      <p class="intentos"></p>
+      <p class="ultimoResultado"></p>
+      <p class="pista"></p>
+      <p class="contador">Intento 1 de 10</p>
+
+    </div>
+
+    <script src="juego.js"></script>
+  </body>
+</html>
